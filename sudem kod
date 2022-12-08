@@ -63,7 +63,27 @@ void area(){
 
 
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+int sum_digits(int n){
+	int ones,tens,hundreds,result;
+	ones=n%10;
+	tens=(n/10)%10;
+	hundreds=n/100;
+	result=ones+tens+hundreds;
+	return result;
+	
+}
+int main(){
+	int num,sum=0;
+	printf("enter an integer: ");
+	scanf("%d",&num);
+	sum=sum_digits(num);
+	printf("sum of digits: %d \n",sum);
+	return 0;
+}
 
 
 
