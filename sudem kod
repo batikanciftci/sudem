@@ -5,7 +5,7 @@
 </head>
 <body bgcolor="salmon">
 <h1>Welcome to my page</h1>
-<img src="civciv.jpg" height=120px width=120px align=right>
+<img src="https://pbs.twimg.com/media/Dj80eEvXoAYVWkB.jpg" height=120px width=120px align=right>
 <p><font color="red" size=5px><b>Personal Information:</b></font></p>
 <p><b><i>Department: </i></b>Informations System Engieering</p>
 <h5><font color="blue">Courses I give:</font></h3>
@@ -40,8 +40,25 @@
 
 
 
+//113 lab örnek//
 
+#include <stdio.h>
+#include <math.h>
 
+void area();
+int main(){
+	area();
+	return 0;
+}
+void area(){
+	int a,b,c;
+	double s,alan;
+	printf("Enter Triangle's sides: \n");
+	scanf("%d%d%d",&a,&b,&c);
+	s=(a+b+c)/2.0;
+	alan=sqrt(s*(s-a)*(s-b)*(s-c));
+	printf("Area of the triangle is: %.2lf\n",alan);
+}
 
 
 
