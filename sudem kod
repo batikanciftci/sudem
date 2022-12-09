@@ -1,4 +1,48 @@
 #include <stdio.h>
+#define C 5.5;
+#define T 2.5;
+#define E 8.45;
+#define A 9.45;
+
+int main()
+{
+    char X;
+    float num2;
+    int num1;
+
+    do{
+        printf("*Welcome to Vending Machine*\n-----Menu-----\nC: coffea\nT: tea\nE: espresso\nA: americano\n");
+        printf("Please enter a choice: ");
+        scanf("%c",&X);
+        printf("Please place the money in to the compartment---> ");
+        scanf("%f",&num2);
+        switch(X){
+            case'C':num2-=C;break;
+            case'T':num2-=T;break;
+            case'E':num2-=E;break;
+            case'A':num2-=A;break;
+        }
+        if(num2<0)
+            printf("Not enough money: ");
+        else{
+            printf("Remainder of money: %0.2f, please get your money\nYou can recieve your order bon apetit!\n",num2);}
+        printf("Do You Want to Continue(Press 0 to quit,1 to continue): ");
+        scanf("%d",&num1);
+    }
+    while(num1 == 1);
+
+}
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
 #include <math.h>
 
 int main(){
