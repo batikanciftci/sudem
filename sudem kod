@@ -1,4 +1,40 @@
 #include <stdio.h>
+
+int main()
+{
+	int a,b;
+	
+	for(b=0;b<5;b++)
+	{
+		if(b==2)
+		{
+			for(a=0;a<5;a++)
+				printf("*");
+		}
+		else
+		{
+	
+			for(a=0;a<5;a++)
+			{
+				if(a==2)
+					printf(" ");
+				else
+					printf("*");
+			}
+		}
+		printf("\n");
+	}
+}
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
 #define C 5.5;
 #define T 2.5;
 #define E 8.45;
